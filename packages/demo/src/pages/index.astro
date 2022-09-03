@@ -1,9 +1,5 @@
 ---
-import { Markdown, Markup } from 'astro-remote';
-import Title from '../components/Title.astro';
-
 const example = await fetch('https://example.com/').then(res => res.text());
-const readme = await fetch('https://raw.githubusercontent.com/natemoo-re/astro-remote/main/README.md').then(res => res.text());
 ---
 
 <html lang="en">
@@ -15,12 +11,7 @@ const readme = await fetch('https://raw.githubusercontent.com/natemoo-re/astro-r
 	<body>
 		<div class="markup">
 			<h1>Markup</h1>
-			<Markup content={example} sanitize={{ dropElements: ['head'], blockElements: ['html', 'body', 'div'] }} components={{ h1: Title }} />
-		</div>
-		
-		<div class="markdown">
-			<h1>Markdown</h1>
-			<Markdown content={readme} components={{ h1: Title }} />
+			<Fragment set:html={example} />
 		</div>
 	</body>
 </html>

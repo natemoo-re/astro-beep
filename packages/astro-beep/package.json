@@ -1,0 +1,40 @@
+{
+  "name": "astro-beep",
+  "type": "module",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/natemoo-re/astro-beep"
+  },
+  "bugs": {
+    "url": "https://github.com/natemoo-re/astro-beep/issues"
+  },
+  "homepage": "https://github.com/natemoo-re/astro-beep#README",
+  "files": [
+    "lib",
+    "index.d.ts",
+    "index.js",
+    "CHANGELOG.md"
+  ],
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": "./index.js",
+    "./lib/*": "./lib/*",
+    "./package.json": "./package.json"
+  },
+  "keywords": [
+    "astro",
+    "astro-integration"
+  ],
+  "author": {
+    "name": "Nate Moore",
+    "email": "nate@natemoo.re",
+    "url": "https://twitter.com/n_moore"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "node-notifier": "^10.0.1",
+    "escalade": "^3.1.1"
+  }
+}

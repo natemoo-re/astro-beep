@@ -4,19 +4,19 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "pnpm --filter demo run dev",
+    "build": "pnpm --filter demo run build",
     "lint": "prettier \"**/*.{js,ts,md,json}\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/natemoo-re/astro-remote.git"
+    "url": "git+https://github.com/natemoo-re/astro-beep.git"
   },
   "keywords": [],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/natemoo-re/astro-remote/issues"
+    "url": "https://github.com/natemoo-re/astro-beep/issues"
   },
-  "homepage": "https://github.com/natemoo-re/astro-remote#readme",
+  "homepage": "https://github.com/natemoo-re/astro-beep#readme",
   "volta": {
     "node": "16.13.0"
   },
