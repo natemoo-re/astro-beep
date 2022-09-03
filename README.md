@@ -1,1 +1,1 @@
-./packages/astro-remote/README.md
+./packages/astro-beep/README.md
