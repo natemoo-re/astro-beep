@@ -1,7 +1,5 @@
-import beep from 'astro-beep'
+import beep from 'astro-beep';
 
 export default {
-    integrations: [
-        beep()
-    ]
-}
+	integrations: [beep({ mode: 'blastoff' })],
+};

@@ -1,3 +1,7 @@
 import { AstroIntegration } from 'astro';
 
-export default function beep(): AstroIntegration;
+export interface AstroBeepProps {
+	mode?: "normal" | "blastoff";
+}
+
+export default function beep(props: AstroBeepProps): AstroIntegration;
